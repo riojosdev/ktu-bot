@@ -1,0 +1,26 @@
+{
+  "name": "a-telegram-bot",
+  "version": "1.0.0",
+  "description": "Telegram bot to send alerts when KTU announces an update",
+  "main": "index.js",
+  "engines": {
+    "node": "16.x"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "TELEGRAM",
+    "KTU",
+    "BOT"
+  ],
+  "author": "WWW.RIOJOS.IN",
+  "license": "ISC",
+  "dependencies": {
+    "@ladjs/graceful": "^1.0.5",
+    "bree": "^7.1.0",
+    "pg-promise": "^10.11.1",
+    "puppeteer": "^11.0.0",
+    "telegraf": "^4.4.2"
+  }
+}
