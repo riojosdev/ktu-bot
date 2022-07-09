@@ -3,11 +3,7 @@
 `start.js` file is used to send the first message. It also logs the telegram client id. Please save that client id, it is used in the main bot app. 
 Contact developer to setup the heroku. (config variables, install, running...)
 
-******
-readme
-------
-# !!! WORDPRESS FUNCTIONALITY REMOVED
-******
+---
 
 # KTU-BOT 
 > Scrapes KTU Website For MBA announcements and send the latest announcements to telegram via bot and also creates a wordpress article of the same.
@@ -25,9 +21,6 @@ ___
     * `KTU_URL` -> Use the official KTU website announcements page URL.
     * `TELEGRAM_GROUP_ID` -> After running the `start.js` file you will get the Telegram group id. Copy that here.
     * `TELEGRAM_TOKEN` -> Token provided for the Telegram bot by Telegram's Botfather.
-    * `WP_PASSWORD` -> Wordpress User's Application Password (generated in wordpress dashboard).
-    * `WP_URL` -> Wordpress blog URL and end it with `/wp-json`.
-    * `WP_USERNAME` -> Wordpress Username (Use the username of the user, whose application password has been used).
 
     In the heroku website dashboard, in the Overview tab there is a section called Dyno Formation. Make sure the `worker node index.js` is set to ON. And `web npm start` is set to OFF.
 5. Download the main repo from github & change all the `process.env.NAME` with the appropriate values in quotes.
@@ -44,15 +37,6 @@ ___
 2. Run `npm install` from the directory.
 3. Reconfigure with user's environment variables on `start.js`.
     **Environment Variable Reference**
-    ```javascript
-    // Wordpress URL, Username & Generated application password.
-    const wp = new WPAPI({
-        endpoint: 'https://www.example.com/wp-json',
-        username: 'admin',
-        password: 'Gjs7h32s0jd3j0ikdl76dkD3'
-    });
-    ```
-
     ```javascript
     // Telegram Bot Token
     const bot = new Telegraf('1234567890:AA3hgDT53kiy768GT6Fcvh7o923dVFU091a');
