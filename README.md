@@ -10,7 +10,7 @@ Contact developer to setup the heroku. (config variables, install, running...)
 ___
 >>> **WARNING! : Emoji used for telegram message 🔗 & 📩 are used to extract the links for comparison. Please make changes to the `linkReplaced()` too, if format is altered.**
 ---
-# Using Github Automatic Deploy to Heroku.
+# Using Github semi-automatic Deploy to Heroku.
 1. Create a new Heroku Dyno.
 2. Select **NodeJS Buildpack** & search for **NodeJS-Puppeteer Buildpack** from the created Dyno's settings tab.
 3. Install postgress database **addon**.
