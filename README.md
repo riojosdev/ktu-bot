@@ -5,6 +5,8 @@ Contact developer to setup the heroku. (config variables, install, running...)
 
 ******
 readme
+------
+# !!! WORDPRESS FUNCTIONALITY REMOVED
 ******
 
 # KTU-BOT 
